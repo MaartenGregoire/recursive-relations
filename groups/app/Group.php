@@ -26,6 +26,4 @@ class Group extends Model
     public function allParents(){
         return $this->parent()->with('allParents');
     }
-
-
 }

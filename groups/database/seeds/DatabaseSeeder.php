@@ -50,5 +50,16 @@ class DatabaseSeeder extends Seeder
             'name' => 'BMI',
             'parent_id' => $group3->id
         ));
+
+        $group10 = Group::create(array(
+            'name' => 'Stappenteller',
+            'parent_id' => $group6->id
+        ));
+
+        $group11 = Group::create(array(
+            'name' => 'Afstand',
+            'parent_id' => $group7->id
+        ));
+
     }
 }

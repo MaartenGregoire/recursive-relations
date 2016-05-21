@@ -10,5 +10,6 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::singularResourceParameters();
 
-Route::get('/', 'GroupController@index');
+Route::resource('groups', 'GroupController', ['only' => ['index', 'show']]);
